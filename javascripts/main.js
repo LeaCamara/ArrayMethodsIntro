@@ -112,8 +112,10 @@ var chainingResult = integers
 // only returns numbers that are > 19
 .map(function(num){return (num * 1.5) - 1})
 // multiplies each remaining # by 1.5 and then subtracts 1
-
-
+.reduce(function(prev, curr){return prev + curr});
+// outputs the sum of all the resulting numbers
+console.log("chainingResult", chainingResult);
+// CL result: chainingResult 111.5
 
 // a & b are first two values inside the array ***
 
