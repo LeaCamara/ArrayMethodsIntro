@@ -107,6 +107,8 @@ var integers = [13, 25, 6, 3, 11, 2, 18, 7, 21, 1, 29, 20, 12, 8];
 var chainingResult = integers
 .sort(function(a, b){return a - b})
 .reverse()
+// console.log("chainingResult", chainingResult);
+// returns: [29, 25, 21, 20, 18, 13, 12, 11, 8, 7, 6, 3, 2, 1]
 // sorts nums in descending order
 .filter(function(num){return num < 19})
 // only returns numbers that are > 19
